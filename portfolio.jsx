@@ -572,21 +572,12 @@ export default function Portfolio() {
         .exp-detail { color: var(--text-dim); font-size: 15px; line-height: 1.75; margin: 0 0 12px; }
         .exp-supervisor { color: var(--text-faint); font-size: 13px; font-family: 'IBM Plex Mono', monospace; }
 
-        /* EDU / CERTS */
-        .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
-        @media (max-width: 860px) { .split-grid { grid-template-columns: 1fr; gap: 48px; } }
+        /* EDUCATION */
         .timeline-item { border-left: 1px solid var(--line); padding-left: 22px; position: relative; padding-bottom: 6px; }
         .timeline-item::before { content: ''; position: absolute; left: -5px; top: 4px; width: 9px; height: 9px; border-radius: 50%; background: var(--amber); }
         .timeline-item h3 { font-size: 18px; font-weight: 600; }
         .timeline-meta { color: var(--text-dim); font-size: 13.5px; margin-top: 4px; font-family: 'IBM Plex Mono', monospace; }
         .cgpa-badge { display: inline-block; margin-top: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--amber); border: 1px solid var(--line); padding: 4px 10px; }
-
-        .cert-line { color: var(--text-dim); font-size: 15px; line-height: 1.75; border-left: 2px solid var(--amber); padding-left: 16px; }
-        .cert-card { border: 1px solid var(--line); background: var(--surface); padding: 22px 24px; margin-bottom: 16px; }
-        .cert-org { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--teal); text-transform: uppercase; letter-spacing: 0.04em; }
-        .cert-card h3 { font-size: 16.5px; font-weight: 600; margin-top: 6px; }
-        .cert-via { color: var(--text-faint); font-size: 12.5px; margin-top: 4px; font-family: 'IBM Plex Mono', monospace; }
-        .cert-detail { color: var(--text-dim); font-size: 14px; margin-top: 10px; line-height: 1.6; }
 
         /* ACHIEVEMENTS */
         .ach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
@@ -636,7 +627,7 @@ export default function Portfolio() {
                         <button onClick={() => scrollTo("skills")}>Stack</button>
                         <button onClick={() => scrollTo("projects")}>Projects</button>
                         <button onClick={() => scrollTo("experience")}>Experience</button>
-                        <button onClick={() => scrollTo("credentials")}>Credentials</button>
+                        <button onClick={() => scrollTo("credentials")}>Education</button>
                         <button onClick={() => scrollTo("contact")}>Contact</button>
                     </div>
                     <div className="nav-icons">
@@ -831,30 +822,20 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            {/* EDUCATION + CERTS */}
+            {/* EDUCATION */}
             <section id="credentials">
-                <div className="wrap split-grid">
-                    <div>
-                        <Reveal>
-                            <Eyebrow index="[00]">Education</Eyebrow>
-                        </Reveal>
-                        <Reveal delay={80}>
-                            <div className="timeline-item">
-                                <h3>Graphic Era University</h3>
-                                <div className="timeline-meta">B.Tech, Computer Science &amp; Engineering \u00b7 2023 \u2014 2027</div>
-                                <div className="timeline-meta">Dehradun, India</div>
-                                <span className="cgpa-badge">CGPA 7.9</span>
-                            </div>
-                        </Reveal>
-                    </div>
-                    <div>
-                        <Reveal>
-                            <Eyebrow index="[00]">Certifications</Eyebrow>
-                        </Reveal>
-                        <Reveal delay={80}>
-                            <p className="cert-line">{CERTS}</p>
-                        </Reveal>
-                    </div>
+                <div className="wrap">
+                    <Reveal>
+                        <Eyebrow index="[00]">Education</Eyebrow>
+                    </Reveal>
+                    <Reveal delay={80}>
+                        <div className="timeline-item">
+                            <h3>Graphic Era University</h3>
+                            <div className="timeline-meta">B.Tech, Computer Science &amp; Engineering · 2023 — 2027</div>
+                            <div className="timeline-meta">Dehradun, India</div>
+                            <span className="cgpa-badge">CGPA 7.9</span>
+                        </div>
+                    </Reveal>
                 </div>
             </section>
 
