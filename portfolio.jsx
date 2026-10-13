@@ -153,12 +153,11 @@ const EXPERIENCE = [
     },
 ];
 
-const CERTS = "Forage Job Simulations \u2014 JPMorgan Chase & Co. (Software Engineering) \u00b7 Deloitte (Technology), June 2026";
 
 const ACHIEVEMENTS = [
     { title: "Top 10 of 120 Teams \u2014 Grapethon 3.0 Hackathon", detail: "Ranked in the top 10 nationwide out of 120 competing teams for a high-impact engineering solution." },
     { title: "Semi-Finalist \u2014 Flipkart GRID 7.0", detail: "Placed in the top 5% nationally across algorithm optimization and system design challenges." },
-    { title: "240+ LeetCode Problems", detail: "Solved across Graphs, Dynamic Programming, and Trees." },
+    { title: "300+ LeetCode Problems", detail: "Solved across Graphs, Dynamic Programming, and Trees." },
 ];
 
 /* ----------------------------------------------------------------------
@@ -844,7 +843,7 @@ export default function Portfolio() {
                                 <h3>Graphic Era University</h3>
                                 <div className="timeline-meta">B.Tech, Computer Science &amp; Engineering \u00b7 2023 \u2014 2027</div>
                                 <div className="timeline-meta">Dehradun, India</div>
-                                <span className="cgpa-badge">CGPA 8.0</span>
+                                <span className="cgpa-badge">CGPA 7.9</span>
                             </div>
                         </Reveal>
                     </div>
